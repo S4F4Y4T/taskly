@@ -23,9 +23,4 @@ class TaskPolicy
         return $user->id === $task->user_id;
     }
 
-    public function status(User $user, Task $task): bool
-    {
-        return $user->id === $task->user_id;
-    }
-
 }

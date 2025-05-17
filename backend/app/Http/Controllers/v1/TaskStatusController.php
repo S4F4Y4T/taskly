@@ -14,7 +14,7 @@ class TaskStatusController extends Controller
 {
     public function __invoke(UpdateTaskStatusRequest $request, Task $task): JsonResponse
     {
-        Gate::authorize($task);
+        Gate::authorize('update', $task);
 
         if($task->status === StatusEnum::COMPLETED) {
             return self::error('Task already completed', 400);
