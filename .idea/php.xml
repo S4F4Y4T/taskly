@@ -1,47 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="AutoImportSettings">
-    <option name="autoReloadType" value="SELECTIVE" />
+  <component name="LaravelPint">
+    <laravel_pint_settings>
+      <LaravelPintConfiguration tool_path="$PROJECT_DIR$/backend/vendor/bin/pint" />
+    </laravel_pint_settings>
   </component>
-  <component name="ChangeListManager">
-    <list default="true" id="1a7ff1c0-fcc2-4a99-8349-5eab7638185e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.prettierrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/eslint.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/vite.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
-    <option name="SHOW_DIALOG" value="false" />
-    <option name="HIGHLIGHT_CONFLICTS" value="true" />
-    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
-    <option name="LAST_RESOLUTION" value="IGNORE" />
+  <component name="MessDetectorOptionsConfiguration">
+    <option name="transferred" value="true" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
-    <pharConfigPath>$PROJECT_DIR$/backend/composer.json</pharConfigPath>
-    <execution />
+  <component name="PHPCSFixerOptionsConfiguration">
+    <option name="transferred" value="true" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  <component name="PHPCodeSnifferOptionsConfiguration">
+    <option name="highlightLevel" value="WARNING" />
+    <option name="transferred" value="true" />
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/storage/logs/laravel.log" root0="SKIP_INSPECTION" />
-  </component>
-  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="/bin/php">
+  <component name="PhpIncludePathManager">
     <include_path>
       <path value="$PROJECT_DIR$/vendor/psy/psysh" />
       <path value="$PROJECT_DIR$/vendor/fidry/cpu-core-counter" />
@@ -297,111 +271,11 @@
       <path value="$PROJECT_DIR$/backend/vendor/graham-campbell/result-type" />
     </include_path>
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 4
-}</component>
-  <component name="ProjectId" id="2xBp8ZfYm9nnP9G3M9huOhGZJXj" />
-  <component name="ProjectViewState">
-    <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showLibraryContents" value="true" />
+  <component name="PhpProjectSharedConfiguration" php_language_level="8.2" />
+  <component name="PhpStanOptionsConfiguration">
+    <option name="transferred" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;Pest.TaskTest.php::`Task CRUD Operations` → it should delete a task.executor&quot;: &quot;Run&quot;,
-    &quot;Pest.TaskTest.php::`Task CRUD Operations` → it should update an existing task.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;junie.onboarding.icon.badge.shown&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/var/www/taskly/app&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/var/www/taskly/frontend/node_modules/prettier&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/postman" />
-      <recent name="$PROJECT_DIR$/tests/Feature" />
-      <recent name="$PROJECT_DIR$/app/Enums" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Pest.TaskTest.php::`Task CRUD Operations` → it should update an existing task">
-    <configuration name="Main" type="PestRunConfigurationType">
-      <option name="pestRunnerSettings">
-        <PestRunner configuration_file="$PROJECT_DIR$/backend/phpunit.xml" scope="ConfigurationFile" use_alternative_configuration_file="true" />
-      </option>
-      <option name="runnerSettings">
-        <PhpTestRunnerSettings configuration_file="$PROJECT_DIR$/backend/phpunit.xml" scope="ConfigurationFile" use_alternative_configuration_file="true" />
-      </option>
-      <method v="2" />
-    </configuration>
-    <configuration name="TaskTest.php::`Task CRUD Operations` → it should delete a task" type="PestRunConfigurationType" temporary="true">
-      <option name="pestRunnerSettings">
-        <PestRunner file="$PROJECT_DIR$/tests/Feature/TaskTest.php" method="`Task CRUD Operations` → it should delete a task" scope="Method" />
-      </option>
-      <option name="runnerSettings">
-        <PhpTestRunnerSettings file="$PROJECT_DIR$/tests/Feature/TaskTest.php" method="`Task CRUD Operations` → it should delete a task" scope="Method" />
-      </option>
-      <method v="2" />
-    </configuration>
-    <configuration name="TaskTest.php::`Task CRUD Operations` → it should update an existing task" type="PestRunConfigurationType" temporary="true">
-      <option name="pestRunnerSettings">
-        <PestRunner file="$PROJECT_DIR$/tests/Feature/TaskTest.php" method="`Task CRUD Operations` → it should update an existing task" scope="Method" />
-      </option>
-      <option name="runnerSettings">
-        <PhpTestRunnerSettings file="$PROJECT_DIR$/tests/Feature/TaskTest.php" method="`Task CRUD Operations` → it should update an existing task" scope="Method" />
-      </option>
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Pest.TaskTest.php::`Task CRUD Operations` → it should update an existing task" />
-        <item itemvalue="Pest.TaskTest.php::`Task CRUD Operations` → it should delete a task" />
-      </list>
-    </recent_temporary>
-  </component>
-  <component name="SharedIndexes">
-    <attachedChunks>
-      <set>
-        <option value="bundled-js-predefined-d6986cc7102b-6a121458b545-JavaScript-PS-251.25410.148" />
-        <option value="bundled-php-predefined-a98d8de5180a-c5828cf854d9-com.jetbrains.php.sharedIndexes-PS-251.25410.148" />
-      </set>
-    </attachedChunks>
-  </component>
-  <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="1a7ff1c0-fcc2-4a99-8349-5eab7638185e" name="Changes" comment="" />
-      <created>1747421163734</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1747421163734</updated>
-      <workItem from="1747421166871" duration="18801000" />
-      <workItem from="1747486440742" duration="1491000" />
-      <workItem from="1747494982510" duration="6294000" />
-      <workItem from="1747530170018" duration="2078000" />
-    </task>
-    <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/frontend/src/views/TasksView.vue</url>
-          <line>1</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="PsalmOptionsConfiguration">
+    <option name="transferred" value="true" />
   </component>
 </project>
