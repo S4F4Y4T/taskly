@@ -7,6 +7,12 @@ export const useTaskStore = defineStore('task', () => {
   const currentTask = ref(null)
   const loading = ref(false)
   const error = ref(null)
+  const pagination = ref({
+    currentPage: 1,
+    lastPage: 1,
+    perPage: 10,
+    total: 0
+  })
 
   const apiUrl = import.meta.env.VITE_API_URL
 
@@ -17,13 +23,13 @@ export const useTaskStore = defineStore('task', () => {
     'Content-Type': 'application/json',
   }))
 
-  async function fetchTasks() {
+  async function fetchTasks(page = 1) {
     if (!authStore.isAuthenticated) return
 
     loading.value = true
     error.value = null
     try {
-      const response = await fetch(`${apiUrl}/tasks`, {
+      const response = await fetch(`${apiUrl}/tasks?page=${page}`, {
         headers: getAuthHeaders.value,
       })
       const data = await response.json()
@@ -33,6 +39,15 @@ export const useTaskStore = defineStore('task', () => {
       }
 
       tasks.value = data.data
+
+      // Update pagination information
+      pagination.value = {
+        currentPage: data.meta.current_page,
+        lastPage: data.meta.last_page,
+        perPage: data.meta.per_page,
+        total: data.meta.total
+      }
+
       return tasks.value
     } catch (err) {
       error.value = err.message
@@ -204,6 +219,7 @@ export const useTaskStore = defineStore('task', () => {
     currentTask,
     loading,
     error,
+    pagination,
     fetchTasks,
     fetchTask,
     createTask,

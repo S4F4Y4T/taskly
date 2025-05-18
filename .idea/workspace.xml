@@ -5,26 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1a7ff1c0-fcc2-4a99-8349-5eab7638185e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.prettierrc.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/.vscode/extensions.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/docker-compose.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/eslint.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/jsconfig.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/assets/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/vite.config.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend/app/Http/Resources/V1/TaskResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/backend/app/Http/Resources/V1/TaskResource.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/stores/task.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/stores/task.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/views/TasksView.vue" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/views/TasksView.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -385,7 +369,9 @@
       <workItem from="1747421166871" duration="18801000" />
       <workItem from="1747486440742" duration="1491000" />
       <workItem from="1747494982510" duration="6294000" />
-      <workItem from="1747530170018" duration="2078000" />
+      <workItem from="1747530170018" duration="2947000" />
+      <workItem from="1747555044462" duration="1074000" />
+      <workItem from="1747571353566" duration="1260000" />
     </task>
     <servers />
   </component>
@@ -398,7 +384,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/frontend/src/views/TasksView.vue</url>
           <line>1</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
