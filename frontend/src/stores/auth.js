@@ -9,7 +9,7 @@ export const useAuthStore = defineStore('auth', () => {
 
   const isAuthenticated = computed(() => !!token.value)
 
-  const apiUrl = 'http://localhost:8000/api/v1'
+  const apiUrl = import.meta.env.VITE_API_URL
 
   async function register(userData) {
     loading.value = true

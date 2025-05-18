@@ -8,7 +8,7 @@ export const useTaskStore = defineStore('task', () => {
   const loading = ref(false)
   const error = ref(null)
 
-  const apiUrl = 'http://localhost:8000/api/v1'
+  const apiUrl = import.meta.env.VITE_API_URL
 
   const authStore = useAuthStore()
 
@@ -163,6 +163,42 @@ export const useTaskStore = defineStore('task', () => {
     }
   }
 
+  async function updateTaskStatus(id, status) {
+    if (!authStore.isAuthenticated) return
+
+    loading.value = true
+    error.value = null
+    try {
+      const response = await fetch(`${apiUrl}/tasks/${id}/status`, {
+        method: 'PUT',
+        headers: getAuthHeaders.value,
+        body: JSON.stringify({ status }),
+      })
+      const data = await response.json()
+
+      if (!response.ok) {
+        throw new Error(data.message || 'Failed to update task status')
+      }
+
+      // Update the task in the tasks array
+      const index = tasks.value.findIndex(task => task.id === id)
+      if (index !== -1) {
+        tasks.value[index] = data.data
+      }
+
+      if (currentTask.value && currentTask.value.id === id) {
+        currentTask.value = data.data
+      }
+
+      return data.data
+    } catch (err) {
+      error.value = err.message
+      throw err
+    } finally {
+      loading.value = false
+    }
+  }
+
   return {
     tasks,
     currentTask,
@@ -172,6 +208,7 @@ export const useTaskStore = defineStore('task', () => {
     fetchTask,
     createTask,
     updateTask,
-    deleteTask
+    deleteTask,
+    updateTaskStatus
   }
 })

@@ -62,6 +62,15 @@ async function handleDeleteTask(taskId) {
   }
 }
 
+// Complete task
+async function handleCompleteTask(taskId) {
+  try {
+    await taskStore.updateTaskStatus(taskId, 'completed')
+  } catch (error) {
+    console.error('Failed to complete task:', error)
+  }
+}
+
 // Edit task
 function editTask(task) {
   editingTask.value = { ...task }
@@ -216,6 +225,13 @@ async function handleLogout() {
                   class="px-3 py-1 bg-indigo-100 text-indigo-700 rounded-md hover:bg-indigo-200"
                 >
                   Edit
+                </button>
+                <button
+                  v-if="task.status !== 'completed'"
+                  @click="handleCompleteTask(task.id)"
+                  class="px-3 py-1 bg-green-100 text-green-700 rounded-md hover:bg-green-200"
+                >
+                  Complete
                 </button>
                 <button
                   @click="handleDeleteTask(task.id)"
